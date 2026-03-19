@@ -1,0 +1,34 @@
+{
+  "csv": {
+    "path": "data/surveys_part1.csv",
+    "encoding": "utf-8",
+    "delimiter": ",",
+    "chunksize": 10000
+  },
+  "database": {
+    "server": "DESKTOP-LS1BH4L\\SQLEXPRESS",
+    "database": "Opinion_Processor",
+    "driver": "ODBC Driver 17 for SQL Server",
+    "trusted_connection": true,
+    "source_table": "Resenas",
+    "query": null,
+    "chunksize": 10000
+  },
+  "api": {
+    "base_url": "http://127.0.0.1:8000",
+    "endpoint": "/comentarios",
+    "method": "GET",
+    "timeout": 30,
+    "headers": {
+      "Accept": "application/json"
+    },
+    "params": {
+      "limit": 1000,
+      "offset": 0
+    },
+    "data_path": "datos"
+  },
+  "staging": {
+    "path": "staging/raw/"
+  }
+}

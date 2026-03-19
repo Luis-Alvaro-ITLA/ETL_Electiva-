@@ -1,0 +1,904 @@
+{
+  "source": "api",
+  "url": "http://127.0.0.1:8000/comentarios",
+  "method": "GET",
+  "total_records": 112,
+  "data": [
+    {
+      "Comentario_ID": 1,
+      "Cliente_ID": 19,
+      "Producto_ID": 3,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-15",
+      "Comentario": "Información suficiente, sin mayor novedad"
+    },
+    {
+      "Comentario_ID": 5,
+      "Cliente_ID": 31,
+      "Producto_ID": 10,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-04",
+      "Comentario": "No cumple con lo anunciado, insatisfecho"
+    },
+    {
+      "Comentario_ID": 7,
+      "Cliente_ID": 36,
+      "Producto_ID": 17,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-20",
+      "Comentario": "No funciona como esperaba, decepcionado"
+    },
+    {
+      "Comentario_ID": 9,
+      "Cliente_ID": 21,
+      "Producto_ID": 10,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-09",
+      "Comentario": "Información suficiente, sin mayor novedad"
+    },
+    {
+      "Comentario_ID": 12,
+      "Cliente_ID": 40,
+      "Producto_ID": 5,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-03",
+      "Comentario": "Satisface lo básico"
+    },
+    {
+      "Comentario_ID": 15,
+      "Cliente_ID": 35,
+      "Producto_ID": 1,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-13",
+      "Comentario": "Producto llegó rápido y funciona perfecto"
+    },
+    {
+      "Comentario_ID": 16,
+      "Cliente_ID": 5,
+      "Producto_ID": 13,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-22",
+      "Comentario": "No funciona como esperaba, decepcionado"
+    },
+    {
+      "Comentario_ID": 17,
+      "Cliente_ID": 22,
+      "Producto_ID": 16,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-04",
+      "Comentario": "Envío tardío y producto dañado"
+    },
+    {
+      "Comentario_ID": 19,
+      "Cliente_ID": 30,
+      "Producto_ID": 4,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-26",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 20,
+      "Cliente_ID": 25,
+      "Producto_ID": 4,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-24",
+      "Comentario": "Entrega correcta, sin comentarios adicionales"
+    },
+    {
+      "Comentario_ID": 22,
+      "Cliente_ID": 20,
+      "Producto_ID": 17,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-11",
+      "Comentario": "Muy mala calidad, se rompió rápido"
+    },
+    {
+      "Comentario_ID": 24,
+      "Cliente_ID": 31,
+      "Producto_ID": 10,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-20",
+      "Comentario": "Me encanta este producto, excelente calidad"
+    },
+    {
+      "Comentario_ID": 26,
+      "Cliente_ID": 36,
+      "Producto_ID": 13,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-04",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 27,
+      "Cliente_ID": 36,
+      "Producto_ID": 13,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-27",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 28,
+      "Cliente_ID": 7,
+      "Producto_ID": 4,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-29",
+      "Comentario": "Producto llegó rápido y funciona perfecto"
+    },
+    {
+      "Comentario_ID": 29,
+      "Cliente_ID": 33,
+      "Producto_ID": 5,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-09",
+      "Comentario": "Muy mala calidad, se rompió rápido"
+    },
+    {
+      "Comentario_ID": 34,
+      "Cliente_ID": 8,
+      "Producto_ID": 1,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-17",
+      "Comentario": "Satisface lo básico"
+    },
+    {
+      "Comentario_ID": 35,
+      "Cliente_ID": 17,
+      "Producto_ID": 1,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-15",
+      "Comentario": "Satisface lo básico"
+    },
+    {
+      "Comentario_ID": 36,
+      "Cliente_ID": 11,
+      "Producto_ID": 2,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-26",
+      "Comentario": "Pésima atención al cliente"
+    },
+    {
+      "Comentario_ID": 37,
+      "Cliente_ID": 8,
+      "Producto_ID": 8,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-22",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 38,
+      "Cliente_ID": 14,
+      "Producto_ID": 5,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-06",
+      "Comentario": "Pésima atención al cliente"
+    },
+    {
+      "Comentario_ID": 39,
+      "Cliente_ID": 36,
+      "Producto_ID": 5,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-27",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 44,
+      "Cliente_ID": 18,
+      "Producto_ID": 12,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-06",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 46,
+      "Cliente_ID": 6,
+      "Producto_ID": 2,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-12",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 47,
+      "Cliente_ID": 35,
+      "Producto_ID": 16,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-10",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 48,
+      "Cliente_ID": 38,
+      "Producto_ID": 5,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-08",
+      "Comentario": "Me encanta este producto, excelente calidad"
+    },
+    {
+      "Comentario_ID": 51,
+      "Cliente_ID": 13,
+      "Producto_ID": 16,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-08",
+      "Comentario": "Es lo que esperaba, nada excepcional"
+    },
+    {
+      "Comentario_ID": 54,
+      "Cliente_ID": 19,
+      "Producto_ID": 16,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-03",
+      "Comentario": "Producto recibido, cumple su función"
+    },
+    {
+      "Comentario_ID": 55,
+      "Cliente_ID": 22,
+      "Producto_ID": 20,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-12",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 58,
+      "Cliente_ID": 13,
+      "Producto_ID": 10,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-10",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 59,
+      "Cliente_ID": 7,
+      "Producto_ID": 11,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-03",
+      "Comentario": "Muy satisfecho con la compra, lo recomiendo"
+    },
+    {
+      "Comentario_ID": 60,
+      "Cliente_ID": 25,
+      "Producto_ID": 8,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-06",
+      "Comentario": "Producto llegó rápido y funciona perfecto"
+    },
+    {
+      "Comentario_ID": 64,
+      "Cliente_ID": 15,
+      "Producto_ID": 10,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-25",
+      "Comentario": "Muy satisfecho con la compra, lo recomiendo"
+    },
+    {
+      "Comentario_ID": 68,
+      "Cliente_ID": 37,
+      "Producto_ID": 12,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-19",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 69,
+      "Cliente_ID": 11,
+      "Producto_ID": 19,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-30",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 71,
+      "Cliente_ID": 27,
+      "Producto_ID": 15,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-16",
+      "Comentario": "Muy mala calidad, se rompió rápido"
+    },
+    {
+      "Comentario_ID": 73,
+      "Cliente_ID": 28,
+      "Producto_ID": 19,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-06",
+      "Comentario": "Me encanta este producto, excelente calidad"
+    },
+    {
+      "Comentario_ID": 77,
+      "Cliente_ID": 23,
+      "Producto_ID": 18,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-08",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 80,
+      "Cliente_ID": 10,
+      "Producto_ID": 8,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-21",
+      "Comentario": "Me encanta este producto, excelente calidad"
+    },
+    {
+      "Comentario_ID": 82,
+      "Cliente_ID": 3,
+      "Producto_ID": 3,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-08",
+      "Comentario": "Muy mala calidad, se rompió rápido"
+    },
+    {
+      "Comentario_ID": 83,
+      "Cliente_ID": 35,
+      "Producto_ID": 13,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-11",
+      "Comentario": "Me encanta este producto, excelente calidad"
+    },
+    {
+      "Comentario_ID": 84,
+      "Cliente_ID": 37,
+      "Producto_ID": 10,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-03",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 85,
+      "Cliente_ID": 10,
+      "Producto_ID": 8,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-23",
+      "Comentario": "Satisface lo básico"
+    },
+    {
+      "Comentario_ID": 86,
+      "Cliente_ID": 36,
+      "Producto_ID": 10,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-19",
+      "Comentario": "Información suficiente, sin mayor novedad"
+    },
+    {
+      "Comentario_ID": 87,
+      "Cliente_ID": 4,
+      "Producto_ID": 14,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-04",
+      "Comentario": "Entrega correcta, sin comentarios adicionales"
+    },
+    {
+      "Comentario_ID": 88,
+      "Cliente_ID": 20,
+      "Producto_ID": 14,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-14",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 89,
+      "Cliente_ID": 10,
+      "Producto_ID": 8,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-23",
+      "Comentario": "Producto recibido, cumple su función"
+    },
+    {
+      "Comentario_ID": 90,
+      "Cliente_ID": 9,
+      "Producto_ID": 14,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-02",
+      "Comentario": "Producto llegó rápido y funciona perfecto"
+    },
+    {
+      "Comentario_ID": 92,
+      "Cliente_ID": 39,
+      "Producto_ID": 2,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-30",
+      "Comentario": "Muy mala calidad, se rompió rápido"
+    },
+    {
+      "Comentario_ID": 93,
+      "Cliente_ID": 14,
+      "Producto_ID": 18,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-12",
+      "Comentario": "Es lo que esperaba, nada excepcional"
+    },
+    {
+      "Comentario_ID": 97,
+      "Cliente_ID": 33,
+      "Producto_ID": 10,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-15",
+      "Comentario": "Entrega correcta, sin comentarios adicionales"
+    },
+    {
+      "Comentario_ID": 100,
+      "Cliente_ID": 13,
+      "Producto_ID": 14,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-13",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 101,
+      "Cliente_ID": 22,
+      "Producto_ID": 16,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-23",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 102,
+      "Cliente_ID": 23,
+      "Producto_ID": 16,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-21",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 105,
+      "Cliente_ID": 33,
+      "Producto_ID": 5,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-24",
+      "Comentario": "Muy mala calidad, se rompió rápido"
+    },
+    {
+      "Comentario_ID": 107,
+      "Cliente_ID": 2,
+      "Producto_ID": 18,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-08",
+      "Comentario": "Envío tardío y producto dañado"
+    },
+    {
+      "Comentario_ID": 108,
+      "Cliente_ID": 28,
+      "Producto_ID": 1,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-01",
+      "Comentario": "Información suficiente, sin mayor novedad"
+    },
+    {
+      "Comentario_ID": 109,
+      "Cliente_ID": 13,
+      "Producto_ID": 17,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-10",
+      "Comentario": "Envío tardío y producto dañado"
+    },
+    {
+      "Comentario_ID": 110,
+      "Cliente_ID": 26,
+      "Producto_ID": 13,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-16",
+      "Comentario": "No funciona como esperaba, decepcionado"
+    },
+    {
+      "Comentario_ID": 112,
+      "Cliente_ID": 31,
+      "Producto_ID": 13,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-23",
+      "Comentario": "Me encanta este producto, excelente calidad"
+    },
+    {
+      "Comentario_ID": 113,
+      "Cliente_ID": 28,
+      "Producto_ID": 3,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-01",
+      "Comentario": "Envío tardío y producto dañado"
+    },
+    {
+      "Comentario_ID": 116,
+      "Cliente_ID": 21,
+      "Producto_ID": 2,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-26",
+      "Comentario": "Muy satisfecho con la compra, lo recomiendo"
+    },
+    {
+      "Comentario_ID": 119,
+      "Cliente_ID": 23,
+      "Producto_ID": 3,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-04",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 122,
+      "Cliente_ID": 25,
+      "Producto_ID": 12,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-27",
+      "Comentario": "Pésima atención al cliente"
+    },
+    {
+      "Comentario_ID": 124,
+      "Cliente_ID": 25,
+      "Producto_ID": 3,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-26",
+      "Comentario": "Información suficiente, sin mayor novedad"
+    },
+    {
+      "Comentario_ID": 125,
+      "Cliente_ID": 6,
+      "Producto_ID": 11,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-29",
+      "Comentario": "Producto llegó rápido y funciona perfecto"
+    },
+    {
+      "Comentario_ID": 126,
+      "Cliente_ID": 6,
+      "Producto_ID": 9,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-04",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 127,
+      "Cliente_ID": 2,
+      "Producto_ID": 17,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-29",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 130,
+      "Cliente_ID": 25,
+      "Producto_ID": 17,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-10",
+      "Comentario": "Producto llegó rápido y funciona perfecto"
+    },
+    {
+      "Comentario_ID": 131,
+      "Cliente_ID": 11,
+      "Producto_ID": 16,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-14",
+      "Comentario": "No cumple con lo anunciado, insatisfecho"
+    },
+    {
+      "Comentario_ID": 132,
+      "Cliente_ID": 16,
+      "Producto_ID": 3,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-27",
+      "Comentario": "Entrega correcta, sin comentarios adicionales"
+    },
+    {
+      "Comentario_ID": 133,
+      "Cliente_ID": 9,
+      "Producto_ID": 7,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-26",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 135,
+      "Cliente_ID": 21,
+      "Producto_ID": 20,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-04",
+      "Comentario": "No funciona como esperaba, decepcionado"
+    },
+    {
+      "Comentario_ID": 138,
+      "Cliente_ID": 37,
+      "Producto_ID": 13,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-18",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 139,
+      "Cliente_ID": 30,
+      "Producto_ID": 18,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-07",
+      "Comentario": "Información suficiente, sin mayor novedad"
+    },
+    {
+      "Comentario_ID": 142,
+      "Cliente_ID": 39,
+      "Producto_ID": 13,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-11",
+      "Comentario": "No cumple con lo anunciado, insatisfecho"
+    },
+    {
+      "Comentario_ID": 143,
+      "Cliente_ID": 24,
+      "Producto_ID": 14,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-24",
+      "Comentario": "Satisface lo básico"
+    },
+    {
+      "Comentario_ID": 144,
+      "Cliente_ID": 16,
+      "Producto_ID": 3,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-23",
+      "Comentario": "Envío tardío y producto dañado"
+    },
+    {
+      "Comentario_ID": 145,
+      "Cliente_ID": 26,
+      "Producto_ID": 20,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-31",
+      "Comentario": "Es lo que esperaba, nada excepcional"
+    },
+    {
+      "Comentario_ID": 146,
+      "Cliente_ID": 15,
+      "Producto_ID": 1,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-01",
+      "Comentario": "Pésima atención al cliente"
+    },
+    {
+      "Comentario_ID": 147,
+      "Cliente_ID": 24,
+      "Producto_ID": 19,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-11",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 148,
+      "Cliente_ID": 2,
+      "Producto_ID": 5,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-03",
+      "Comentario": "Envío tardío y producto dañado"
+    },
+    {
+      "Comentario_ID": 152,
+      "Cliente_ID": 22,
+      "Producto_ID": 4,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-13",
+      "Comentario": "No funciona como esperaba, decepcionado"
+    },
+    {
+      "Comentario_ID": 153,
+      "Cliente_ID": 11,
+      "Producto_ID": 17,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-15",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 156,
+      "Cliente_ID": 5,
+      "Producto_ID": 7,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-29",
+      "Comentario": "Pésima atención al cliente"
+    },
+    {
+      "Comentario_ID": 157,
+      "Cliente_ID": 8,
+      "Producto_ID": 11,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-24",
+      "Comentario": "Calidad superior, muy contento"
+    },
+    {
+      "Comentario_ID": 158,
+      "Cliente_ID": 40,
+      "Producto_ID": 11,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-30",
+      "Comentario": "Me encanta este producto, excelente calidad"
+    },
+    {
+      "Comentario_ID": 161,
+      "Cliente_ID": 10,
+      "Producto_ID": 6,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-27",
+      "Comentario": "No cumple con lo anunciado, insatisfecho"
+    },
+    {
+      "Comentario_ID": 162,
+      "Cliente_ID": 12,
+      "Producto_ID": 19,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-23",
+      "Comentario": "Pésima atención al cliente"
+    },
+    {
+      "Comentario_ID": 163,
+      "Cliente_ID": 32,
+      "Producto_ID": 6,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-18",
+      "Comentario": "Muy satisfecho con la compra, lo recomiendo"
+    },
+    {
+      "Comentario_ID": 164,
+      "Cliente_ID": 23,
+      "Producto_ID": 20,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-20",
+      "Comentario": "Entrega correcta, sin comentarios adicionales"
+    },
+    {
+      "Comentario_ID": 166,
+      "Cliente_ID": 29,
+      "Producto_ID": 16,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-10",
+      "Comentario": "Muy mala calidad, se rompió rápido"
+    },
+    {
+      "Comentario_ID": 167,
+      "Cliente_ID": 18,
+      "Producto_ID": 8,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-17",
+      "Comentario": "Producto llegó rápido y funciona perfecto"
+    },
+    {
+      "Comentario_ID": 169,
+      "Cliente_ID": 35,
+      "Producto_ID": 19,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-08",
+      "Comentario": "Es lo que esperaba, nada excepcional"
+    },
+    {
+      "Comentario_ID": 170,
+      "Cliente_ID": 28,
+      "Producto_ID": 15,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-09",
+      "Comentario": "Muy satisfecho con la compra, lo recomiendo"
+    },
+    {
+      "Comentario_ID": 171,
+      "Cliente_ID": 6,
+      "Producto_ID": 15,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-18",
+      "Comentario": "Muy mala calidad, se rompió rápido"
+    },
+    {
+      "Comentario_ID": 174,
+      "Cliente_ID": 39,
+      "Producto_ID": 12,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-07",
+      "Comentario": "Envío tardío y producto dañado"
+    },
+    {
+      "Comentario_ID": 175,
+      "Cliente_ID": 33,
+      "Producto_ID": 10,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-23",
+      "Comentario": "Producto recibido, cumple su función"
+    },
+    {
+      "Comentario_ID": 177,
+      "Cliente_ID": 21,
+      "Producto_ID": 8,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-26",
+      "Comentario": "Entrega correcta, sin comentarios adicionales"
+    },
+    {
+      "Comentario_ID": 179,
+      "Cliente_ID": 18,
+      "Producto_ID": 3,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-13",
+      "Comentario": "Envío tardío y producto dañado"
+    },
+    {
+      "Comentario_ID": 180,
+      "Cliente_ID": 6,
+      "Producto_ID": 11,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-20",
+      "Comentario": "Entrega correcta, sin comentarios adicionales"
+    },
+    {
+      "Comentario_ID": 182,
+      "Cliente_ID": 21,
+      "Producto_ID": 7,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-02",
+      "Comentario": "Es lo que esperaba, nada excepcional"
+    },
+    {
+      "Comentario_ID": 183,
+      "Cliente_ID": 32,
+      "Producto_ID": 5,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-01",
+      "Comentario": "Producto recibido, cumple su función"
+    },
+    {
+      "Comentario_ID": 184,
+      "Cliente_ID": 11,
+      "Producto_ID": 15,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-19",
+      "Comentario": "Muy mala calidad, se rompió rápido"
+    },
+    {
+      "Comentario_ID": 186,
+      "Cliente_ID": 24,
+      "Producto_ID": 12,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-25",
+      "Comentario": "No funciona como esperaba, decepcionado"
+    },
+    {
+      "Comentario_ID": 188,
+      "Cliente_ID": 31,
+      "Producto_ID": 4,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-09",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 189,
+      "Cliente_ID": 22,
+      "Producto_ID": 15,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-28",
+      "Comentario": "Entrega correcta, sin comentarios adicionales"
+    },
+    {
+      "Comentario_ID": 190,
+      "Cliente_ID": 25,
+      "Producto_ID": 16,
+      "Fuente_ID": 103,
+      "Fecha": "2025-08-04",
+      "Comentario": "Me encanta este producto, excelente calidad"
+    },
+    {
+      "Comentario_ID": 192,
+      "Cliente_ID": 37,
+      "Producto_ID": 5,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-31",
+      "Comentario": "Muy satisfecho con la compra, lo recomiendo"
+    },
+    {
+      "Comentario_ID": 196,
+      "Cliente_ID": 6,
+      "Producto_ID": 8,
+      "Fuente_ID": 103,
+      "Fecha": "2025-06-28",
+      "Comentario": "Gran relación calidad-precio"
+    },
+    {
+      "Comentario_ID": 198,
+      "Cliente_ID": 26,
+      "Producto_ID": 20,
+      "Fuente_ID": 103,
+      "Fecha": "2025-07-12",
+      "Comentario": "Me encanta este producto, excelente calidad"
+    },
+    {
+      "Comentario_ID": 199,
+      "Cliente_ID": 32,
+      "Producto_ID": 13,
+      "Fuente_ID": 103,
+      "Fecha": "2025-09-12",
+      "Comentario": "Muy mala calidad, se rompió rápido"
+    }
+  ]
+}
