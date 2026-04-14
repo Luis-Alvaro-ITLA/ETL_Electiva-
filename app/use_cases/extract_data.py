@@ -1,4 +1,4 @@
-from staging.raw_writer import RawDataWriter
+from infrastructure.storage.raw_writer import RawDataWriter
 
 class ExtractDataUseCase:
     def __init__(self, extractors, logger):

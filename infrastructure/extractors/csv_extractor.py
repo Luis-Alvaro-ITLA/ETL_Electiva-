@@ -49,7 +49,7 @@ class CsvExtractor(IExtractor):
                 "source": "csv",
                 "path": path,
                 "total_records": total_rows,
-                "data": extracted_data
+                "data": extracted_data  # <-- ahora es JSON-friendly
             }
 
         except FileNotFoundError:
