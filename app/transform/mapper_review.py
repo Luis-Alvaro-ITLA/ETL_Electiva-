@@ -2,7 +2,6 @@ from datetime import datetime
 from domain.models.review import Review
 from app.transform.sentiment_analyzer import SentimentAnalyzer
 
-
 class ReviewMapper:
 
     @staticmethod

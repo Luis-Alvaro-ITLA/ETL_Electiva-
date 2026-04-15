@@ -1,30 +1,30 @@
 from datetime import datetime
-from domain.models.review import Review
+from domain.models.survey import Survey
 from app.transform.sentiment_analyzer import SentimentAnalyzer
 
-
-class ReviewMapper:
+class SurveyMapper:
 
     @staticmethod
     def transform(raw_row: dict) -> dict:
-        review = Review(
-            resena_id=str(raw_row["Resena_ID"]),
-            cliente_id=str(raw_row["Cliente_ID"]),
-            producto_id=str(raw_row["Producto_ID"]),
-            fuente_id=str(raw_row["Fuente_ID"]),
+        survey = Survey(
+            opinion_id=str(raw_row["IdOpinion"]),
+            cliente_id=str(raw_row["IdCliente"]),
+            producto_id=str(raw_row["IdProducto"]),
+            fecha=datetime.fromisoformat(str(raw_row["Fecha"])),
             comentario=raw_row["Comentario"],
-            rating=raw_row["Rating"],
-            fecha=datetime.fromisoformat(str(raw_row["Fecha"]))
+            clasificacion=raw_row["Clasificación"],
+            puntaje_satisfaccion=raw_row["PuntajeSatisfacción"],
+            fuente=raw_row["Fuente"]
         )
 
-        sentimiento = SentimentAnalyzer.classify_by_rating(review.rating)
+        sentimiento = SentimentAnalyzer.classify_by_csv_label(survey.clasificacion)
 
         return {
-            "cliente_id": review.cliente_id,
-            "producto_id": review.producto_id,
-            "fuente": "Web",  # Ajustable
-            "comentario": review.comentario,
-            "fecha": review.fecha,
-            "rating": review.rating,
+            "cliente_id": survey.cliente_id,
+            "producto_id": survey.producto_id,
+            "fuente": survey.fuente,
+            "comentario": survey.comentario,
+            "fecha": survey.fecha,
+            "rating": survey.puntaje_satisfaccion,
             "sentimiento": sentimiento
         }

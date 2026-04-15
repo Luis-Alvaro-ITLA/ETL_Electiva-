@@ -1,4 +1,7 @@
 from app.use_cases.extract_data import ExtractDataUseCase
+from app.use_cases.transform_data import TransformDataUseCase
+from app.use_cases.load_data import LoadDataUseCase
+
 from infrastructure.config.settings import Settings
 from infrastructure.extractors.api_extractor import ApiExtractor
 from infrastructure.extractors.csv_extractor import CsvExtractor
@@ -9,20 +12,25 @@ def main():
     settings = Settings()
     logger = get_logger()
 
+    # EXTRACT
     extractors = [
         CsvExtractor(settings, logger),
         DbExtractor(settings, logger),
         ApiExtractor(settings, logger)
     ]
 
-    use_case = ExtractDataUseCase(extractors, logger)
-    results = use_case.execute()
+    extract_use_case = ExtractDataUseCase(extractors, logger)
+    extraction_results = extract_use_case.execute()
 
-    logger.info("Resumen de extracción:")
-    for result in results:
-        logger.info(
-            f"Fuente: {result['source']} | Registros extraídos: {result['total_records']}"
-        )
+    # TRANSFORM
+    transform_use_case = TransformDataUseCase(logger)
+    transformed_data = transform_use_case.execute(extraction_results)
+
+    # LOAD
+    load_use_case = LoadDataUseCase(settings, logger)
+    load_use_case.execute(transformed_data)
+
+    logger.info("ETL completado exitosamente")
 
 
 if __name__ == "__main__":

@@ -2,7 +2,6 @@ from datetime import datetime
 from domain.models.comment import Comment
 from app.transform.sentiment_analyzer import SentimentAnalyzer
 
-
 class CommentMapper:
 
     @staticmethod

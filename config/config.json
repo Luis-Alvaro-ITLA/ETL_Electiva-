@@ -1,4 +1,11 @@
 {
+  "data_warehouse": {
+  "server": "DESKTOP-LS1BH4L\\SQLEXPRESS",
+  "database": "Opinion_Analytics",
+  "driver": "ODBC Driver 17 for SQL Server",
+  "trusted_connection": true
+  },
+  
   "csv": {
     "path": "data/surveys_part1.csv",
     "encoding": "utf-8",
