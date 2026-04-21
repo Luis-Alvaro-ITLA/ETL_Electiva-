@@ -13,56 +13,51 @@ class FactLoader:
 
         self.logger.info("Preparando datos para Fact.Opiniones")
 
-        fact_rows = []
-
-        for idx, row in enumerate(transformed_data, start=1):
-            try:
-                fact_rows.append({
-                    "Opinion_ID": idx,
-                    "Cliente_ID": int(row["cliente_id"]) if row["cliente_id"] else None,
-                    "Producto_ID": int(row["producto_id"]) if row["producto_id"] else None,
-                    "Fuente_ID": fuente_map.get(row["fuente"]),
-                    "Fecha_ID": fecha_map.get(row["fecha"]),
-                    "Rating": row.get("rating"),
-                    "Sentimiento": row.get("sentimiento"),
-                    "Comentario": row.get("comentario"),
-                    "Año": row["fecha"].year if row.get("fecha") else None
-                })
-
-            except Exception as exc:
-                self.logger.error(f"Error transformando fila para Fact: {exc}")
-
-        df = pd.DataFrame(fact_rows)
+        df = pd.DataFrame(transformed_data)
 
         if df.empty:
-            self.logger.warning("DataFrame vacío, no se insertará nada en Fact.Opiniones")
+            self.logger.warning("DataFrame vacío, no se insertará nada")
             return
 
-        try:
-            df["Cliente_ID"] = df["Cliente_ID"].astype("Int64")
-            df["Producto_ID"] = df["Producto_ID"].astype("Int64")
-            df["Fuente_ID"] = df["Fuente_ID"].astype("Int64")
-            df["Fecha_ID"] = df["Fecha_ID"].astype("Int64")
-            df["Rating"] = df["Rating"].astype("Int64")
-            df["Año"] = df["Año"].astype("Int64")
-        except Exception as exc:
-            self.logger.error(f"Error convirtiendo tipos en FactLoader: {exc}")
-            raise
+        df["Fuente_ID"] = df["fuente"].map(fuente_map)
+        df["Fecha_ID"] = df["fecha"].map(fecha_map)
 
-        self.logger.info(f"Insertando {len(df)} registros en Fact.Opiniones")
+        df["cliente_id"] = pd.to_numeric(df["cliente_id"], errors="coerce")
+        df["producto_id"] = pd.to_numeric(df["producto_id"], errors="coerce")
+        df["rating"] = pd.to_numeric(df["rating"], errors="coerce")
 
-        try:
-            df.to_sql(
-                name="Opiniones",
-                schema="Fact",
-                con=self.engine,
-                if_exists="append",
-                index=False,
-                chunksize=1000
-            )
+        df["Año"] = df["fecha"].dt.year
 
-            self.logger.info("Carga en Fact.Opiniones completada")
+        df_final = df[[
+            "cliente_id",
+            "producto_id",
+            "Fuente_ID",
+            "Fecha_ID",
+            "rating",
+            "sentimiento",
+            "comentario",
+            "Año"
+        ]].rename(columns={
+            "cliente_id": "Cliente_ID",
+            "producto_id": "Producto_ID",
+            "rating": "Rating",
+            "sentimiento": "Sentimiento",
+            "comentario": "Comentario"
+        })
 
-        except Exception as exc:
-            self.logger.error(f"Error insertando en Fact.Opiniones: {exc}")
-            raise
+        for col in ["Cliente_ID", "Producto_ID", "Fuente_ID", "Fecha_ID", "Rating", "Año"]:
+            df_final[col] = df_final[col].astype("Int64")
+
+        self.logger.info(f"Insertando {len(df_final)} registros en Fact.Opiniones")
+
+        df_final.to_sql(
+            name="Opiniones",
+            schema="Fact",
+            con=self.engine,
+            if_exists="append",
+            index=False,
+            chunksize=100,
+            method="multi"
+        )
+
+        self.logger.info("Carga en Fact.Opiniones completada")

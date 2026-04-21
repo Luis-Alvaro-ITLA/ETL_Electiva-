@@ -21,26 +21,26 @@ class SentimentAnalyzer:
 
         for word in SentimentAnalyzer.NEGATIVE_WORDS:
             if word in text:
-                return "Negativa"
+                return "Negativo"
 
         for word in SentimentAnalyzer.POSITIVE_WORDS:
             if word in text:
-                return "Positiva"
+                return "Positivo"
 
-        return "Neutra"
+        return "Neutro"
 
     @staticmethod
     def classify_by_rating(rating: int) -> str:
         if rating in (1, 2):
-            return "Negativa"
+            return "Negativo"
         if rating == 3:
-            return "Neutra"
+            return "Neutro"
         if rating in (4, 5):
-            return "Positiva"
-        return "Neutra"
+            return "Positivo"
+        return "Neutro"
 
     @staticmethod
     def classify_by_csv_label(label: str) -> str:
         if not label:
-            return "Neutra"
+            return "Neutro"
         return label.capitalize()

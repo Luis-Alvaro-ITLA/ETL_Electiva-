@@ -11,64 +11,59 @@ class ApiExtractor(IExtractor):
     def extract(self):
         base_url = self.api_config.get("base_url")
         endpoint = self.api_config.get("endpoint", "")
-        method = self.api_config.get("method", "GET").upper()
         timeout = self.api_config.get("timeout", 30)
         headers = self.api_config.get("headers", {}) or {}
         params = self.api_config.get("params", {}) or {}
         data_path = self.api_config.get("data_path", "datos")
 
-        if not base_url:
-            raise ValueError("No se encontró 'api.base_url' en config.json")
-
         url = f"{base_url.rstrip('/')}/{endpoint.lstrip('/')}"
 
-        self.logger.info(f"Iniciando extracción desde API: {url}")
+        self.logger.info(f"Iniciando extracción paginada desde API: {url}")
+
+        all_records = []
+        offset = 0
+        limit = params.get("limit", 1000)
 
         try:
-            if method != "GET":
-                raise ValueError(
-                    f"Para esta API local se esperaba método GET, no {method}"
+            while True:
+                params["offset"] = offset
+
+                response = requests.get(
+                    url,
+                    headers=headers,
+                    params=params,
+                    timeout=timeout
+                )
+                response.raise_for_status()
+
+                payload = response.json()
+                records = self._extract_data_from_payload(payload, data_path)
+
+                if not records:
+                    break
+
+                all_records.extend(records)
+
+                self.logger.info(
+                    f"API chunk offset {offset}: {len(records)} registros"
                 )
 
-            response = requests.get(
-                url,
-                headers=headers,
-                params=params,
-                timeout=timeout
-            )
-            response.raise_for_status()
+                if len(records) < limit:
+                    break
 
-            payload = response.json()
-            records = self._extract_data_from_payload(payload, data_path)
-
-            if not isinstance(records, list):
-                raise ValueError(
-                    f"La ruta '{data_path}' no contiene una lista de registros"
-                )
+                offset += limit
 
             self.logger.info(
-                f"Extracción API completada. Total registros extraídos: {len(records)}"
+                f"Extracción API completada. Total registros: {len(all_records)}"
             )
 
             return {
                 "source": "api",
                 "url": url,
-                "method": method,
-                "total_records": len(records),
-                "data": records
+                "total_records": len(all_records),
+                "data": all_records
             }
 
-        except requests.exceptions.Timeout:
-            self.logger.error(f"Timeout al consumir la API: {url}")
-            raise
-        except requests.exceptions.ConnectionError:
-            self.logger.error(
-                f"No se pudo conectar a la API en {url}. Verifica que esté levantada."
-            )
-            raise
-        except requests.exceptions.RequestException as exc:
-            self.logger.error(f"Error HTTP consumiendo la API: {exc}")
-            raise
         except Exception as exc:
             self.logger.error(f"Error en ApiExtractor: {exc}")
             raise
